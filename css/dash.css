@@ -16,7 +16,12 @@
 .navitem:hover{
     background-color:#f2f2f2;
 }
-.aku { 
+.softwareSampleImage{
+        height: 120px;
+    width: 400px;
+}
+.aku {
+
     transition: all .2s ease-in-out; 
 }
 
