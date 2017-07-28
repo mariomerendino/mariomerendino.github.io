@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <title>Mario Merendino</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href = "css/bootstrap.min.css">
+    <link rel="stylesheet" href = "css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href = "css/dash.css">
+    <script src="js/jquery.min.js"></script>
+    <script src ="js/bootstrap.min.js"></script>
+    <script src ="js/dashNav.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar --> 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class= "navitem" onclick="home()"><a>Home</a></li>
+                <li class= "navitem" onclick="samples()"><a>Software Samples</a></li>
+                <li class="active" onclick="contactMe()"><a>Contact Me</a></li>
+                <li class= "navitem" onclick="help()"><a>Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-4">
+            <h3>Send me a Message!</h3>
+            <p class = "textBlock">
+                Please feel free to contact me at anytime, I am always looking for feedback on
+                my projects, so submit your comments here! Reach out to me if you have feedback,
+                you're looking for a developer, or just want to chat. 
+
+            </p>
+        </div>
+        <div class = "col-md-7"></div>
+    </div>
+    <br>
+    <br>
+    <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-6">
+            <form id="javascript_form">
+                <div class = "form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" />
+                    <br>
+                    <textarea class="form-control" name="text" placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" id="js_send" value="Send" />
+                </div>
+            </form>
+        </div>
+        <div class = "col-md-5"></div>
+
+    </div>
+        <script>
+
+            //update this with your js_form selector
+            var form_id_js = "javascript_form";
+
+            var data_js = {
+                "access_token": "y7qhd3x9wh1lnln8owdw8r1p" // sent after you sign up
+            };
+
+            function js_onSuccess() {
+                // remove this to avoid redirect
+                window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+            }
+
+            function js_onError(error) {
+                // remove this to avoid redirect
+                window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+            }
+            var sendButton = document.getElementById("js_send");
+            function js_send() {
+                sendButton.value='Sending…';
+                sendButton.disabled=true;
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                        js_onSuccess();
+                    } else
+                    if(request.readyState == 4) {
+                        js_onError(request.response);
+                    }
+                };
+
+                var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+                var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+                data_js['subject'] = subject;
+                data_js['text'] = message;
+                var params = toParams(data_js);
+
+                request.open("POST", "https://postmail.invotes.com/send", true);
+                request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                request.send(params);
+
+                return false;
+            }
+
+            sendButton.onclick = js_send;
+
+            function toParams(data_js) {
+                var form_data = [];
+                for ( var key in data_js ) {
+                    form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+                }
+
+                return form_data.join("&");
+            }
+
+            var js_form = document.getElementById(form_id_js);
+            js_form.addEventListener("submit", function (e) {
+                e.preventDefault();
+            });
+        </script>
+    </div>
+</body>
