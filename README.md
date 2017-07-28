@@ -1,3 +1,7 @@
-#README
+Author: Mario J. Merendino
 
-MY WEB PAGE
+I created this web page as an interactive portfolio of my software!
+
+Site created with HTML, CSS, & JavaScript. 
+	- uses the bootstrap library & jQuery.
+
