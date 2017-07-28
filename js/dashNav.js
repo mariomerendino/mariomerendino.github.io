@@ -16,6 +16,9 @@ function downloadResume(){
 function linkedIn(){
     window.location.href = "https://www.linkedin.com/in/mario-merendino-561138127/";
 }
+function gitHub(){
+    window.location.href = "https://github.com/mariomerendino/";
+}
 function changePicture(){
     var image = document.getElementById("portrait").src;
     alert(image);
