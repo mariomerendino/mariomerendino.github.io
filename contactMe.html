@@ -8,6 +8,14 @@
     <script src="js/jquery.min.js"></script>
     <script src ="js/bootstrap.min.js"></script>
     <script src ="js/dashNav.js"></script>
+
+    <script type="text/javascript">
+        //SCRIPT TO SUBMIT FORM TO GOOGLE SHEET
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
 </head>
 
 <body>
@@ -44,28 +52,25 @@
     <div class = "row">
         <div class = "col-md-1"></div>
         <div class = "col-md-6">
-            <form id="javascript_form">
+            <!--FORM -->
+            <!--NOTE: THE ENTRY.####### is used for the google form -->
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1W7BElFTiwFJLn96y8CAoCy6OcGGMWxupkL1Aum9WQsU/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class = "form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Name" />
+                    <input type="text" class="form-control" name = "entry.655609448" id="name" placeholder="Name" />
                     <br>
-                    <input type="text" class="form-control" id="email" placeholder="email@site.com" />
+                    <input type="text" class="form-control" name = "entry.1261244545" id="email" placeholder="email@site.com" />
                     <br>
-                    <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                    <input type="text" class="form-control" name = "entry.2085707089" id="subject" placeholder="Subject" />
                     <br>
-                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="message" name = "entry.349206192" placeholder="Message"></textarea>
                     <br>
                     <input type="submit" id="sendButton" value="Send" />
                 </div>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
         <div class = "col-md-5"></div>
 
     </div>
-        <script>
-            var send = document.getElementById("sendButton");
-            send.onclick = function(){
-                alert('test');
-            }
-        </script>
     </div>
 </body>
