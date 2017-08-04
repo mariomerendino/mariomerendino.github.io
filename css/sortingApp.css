@@ -1,0 +1,13 @@
+.board{
+    background-color: #002a36;
+    height: 700;
+    width:800;
+    padding: 10px;
+    border-radius: 5px;
+    padding-top: 15px;
+    color: #07de00;
+    font-family: "FixedSys";
+}
+ul {
+  list-style-type: none;
+}
