@@ -73,22 +73,22 @@
             var message = document.getElementById("message");
             var subject = document.getElementById("subject");
             
-            //send.value = "Sending..."
-
-
-            //name.value = "";
-            //name.placeholder = "Name"
-                        
-            //email.value = "";
-            //email.placeholder = "email@site.com"
-
-            //subject.value = "";
-            //subject.placeholder = "Subject"
-            
-            //message.value = "";
-            //message.placeholder = "Message"
-
-            send.value = "Message Sent!"
+            if(name.value == ""){
+                alert("Name cannot be blank")
+            }
+            else if(email.value == ""){
+                alert("Email cannot be blank")
+            }
+            else if(message.value == ""){
+                alert("Message cannot Be blank")
+            }
+           else if(subject.value == ""){
+                alert("Subject cannot Be blank")
+            }
+            else{
+                alert("Message Sent!")
+                //contactMe()
+            }
         }
     </script>
     </div>
