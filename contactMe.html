@@ -8,14 +8,6 @@
     <script src="js/jquery.min.js"></script>
     <script src ="js/bootstrap.min.js"></script>
     <script src ="js/dashNav.js"></script>
-
-    <script type="text/javascript">
-        //SCRIPT TO SUBMIT FORM TO GOOGLE SHEET
-        $('#gform').on('submit', function(e) {
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
-        });
-    </script>
 </head>
 
 <body>
@@ -72,5 +64,33 @@
         <div class = "col-md-5"></div>
 
     </div>
+    <script type="text/javascript">
+
+        var send = document.getElementById("sendButton")
+
+        send.onclick = function(){
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var message = document.getElementById("message");
+            var subject = document.getElementById("subject");
+            
+            //send.value = "Sending..."
+
+
+            //name.value = "";
+            //name.placeholder = "Name"
+                        
+            //email.value = "";
+            //email.placeholder = "email@site.com"
+
+            //subject.value = "";
+            //subject.placeholder = "Subject"
+            
+            //message.value = "";
+            //message.placeholder = "Message"
+
+            send.value = "Message Sent!"
+        }
+    </script>
     </div>
 </body>
