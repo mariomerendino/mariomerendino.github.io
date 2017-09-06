@@ -1,3 +1,10 @@
+
+html,body {
+    font-family: 'Raleway', sans-serif;
+}
+b{
+    font-family: 'Arial';
+}
 .navbar-brand
 {
     margin: 0;
