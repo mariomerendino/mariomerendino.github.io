@@ -42,3 +42,7 @@ b{
     border-radius: 10px;
     background-color: #f3f3f3;
 }
+.modalimg{
+    height: 100%;
+    width: auto;
+}

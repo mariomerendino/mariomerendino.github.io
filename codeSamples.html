@@ -10,6 +10,8 @@
     <script src="js/jquery.min.js"></script>
     <script src ="js/bootstrap.min.js"></script>
     <script src ="js/dashNav.js"></script>
+    <script src ="js/softwaresamples.js"></script>
+    
 </head>
 
 <body>
@@ -27,7 +29,6 @@
                     <li class= "navitem" onclick="home()"><a>Home</a></li>
                     <li class= "active" onclick="samples()"><a>Software Samples</a></li>
                     <li class= "navitem" onclick="contactMe()"><a>Contact Me</a></li>
-                    <li class="navitem" onclick="help()"><a>Help</a></li>
                 </ul>
             </div>
         </div>
@@ -51,9 +52,9 @@
         
         <div class="col-md-1"></div> 
         <div class="col-md-5">
-            <a download = "gradr.zip" href = "downloads/Gradr.zip">
-                <img class="img-responsive aku softwareSampleImage" src ="images/gradrBanner.png"></img>
-            </a>
+            <!--<a download = "gradr.zip" href = "downloads/Gradr.zip">-->
+                <img id = "test" class="img-responsive aku softwareSampleImage" src ="images/gradrBanner.png" onclick ="gradrClick()" ></img>
+            <!--</a>-->
         </div> 
         <div class="col-md-5">
             <p class = "textBlock">
@@ -74,7 +75,7 @@
         <div class="col-md-1"></div>
     </div>
     <!-- END GRADR --> 
-     <!-- BaseChanger --> 
+    <!-- BaseChanger --> 
     <div class="row">
         
         <br>
@@ -83,9 +84,7 @@
         <div class="col-md-1">
         </div> 
         <div class="col-md-5">
-            <a href = "https://github.com/mariomerendino/BaseChanger">
-                <img class="img-responsive aku softwareSampleImage" src ="images/BaseChangerBanner.png"></img>
-            </a>
+            <img class="img-responsive aku softwareSampleImage" src ="images/BaseChangerBanner.png" onclick= "basechangerClick()"></img>
         </div> 
         <div class="col-md-5">
             <p class = "textBlock">
@@ -98,8 +97,7 @@
                 This tool allows you to do all of that very easily! I created this project 
                 in <i>Xamarin.Forms</i> using C# for cross platform mobile development. 
                 <br>
-                <b>[iOS and Android]</b> <i>Soon to be on Google Play, and AppStore</i><br>
-                <a download = "BaseChanger.apk" href = "downloads/com.test.Base_Changer.apk"> <i>Click here to download the trial version for Android!</i></aref>                    
+                <b>[iOS and Android]</b>                  
             </p>
         </div>  
         <div class="col-md-1">
@@ -116,10 +114,7 @@
         <div class="col-md-1">
         </div> 
         <div class="col-md-5">
-            <a download = "sorting.zip" href = "downloads/Sorting.zip">
-                <img class="img-responsive aku softwareSampleImage" src ="images/sortingBanner.png"></img>
-            </a>
-
+            <img class="img-responsive aku softwareSampleImage" src ="images/sortingBanner.png" onclick= "sortingClick()"></img>
         </div> 
         <div class="col-md-5">
             <p class = "textBlock">
@@ -141,9 +136,7 @@
         <div class="col-md-1">
         </div> 
         <div class="col-md-5">
-            <a download = "tictactoe.apk" href = "downloads/tictactoe.apk"> 
-                <img class="img-responsive aku softwareSampleImage" src ="images/tictactoeBanner.png"></img>
-            </a>
+            <img class="img-responsive aku softwareSampleImage" src ="images/tictactoeBanner.png" onclick= "tictactoeClick()"></img>
         </div> 
         <div class="col-md-5">
             <p class = "textBlock">
@@ -158,4 +151,32 @@
         </div> 
     </div>
     <!-- END TicTacToe --> 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <a class="navbar-brand"><img  src="images/logo.png"></img></a>
+                    <h4 id = "mtitle"></h4>
+                </div>
+                <div id = "content" class="modal-body" style="padding:40px 50px;">
+                    
+                </div>
+                <div id = "mfooter" class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".softwareSampleImage").click(function(){ 
+                $("#myModal").modal();
+            });
+        });
+    </script>
+    <script src ="js/softwaresamples.js"></script>
+        
 </body>
