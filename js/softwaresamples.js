@@ -17,7 +17,7 @@ function gradrClick(){
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/Gradr/img3.png'></img> </div></div>"
 
     foot.innerHTML = "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'></div>" +
-    "<div class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/Gradr>" + githubIcon + "</a></div>" +
+    "<div style = 'text-align: left;' class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/Gradr>" + githubIcon + "</a><br>  <i>Source Code</i></div>" +
     "<div style = 'padding-top: 20px; class = 'col-xs-3 col-md-3 col-lg-3'>" +
     "<a href = downloads/Gradr.zip> <button style = 'float: left;' class = 'btn'> Download </button></a> </div></div>"
 
@@ -46,7 +46,7 @@ function tictactoeClick(){
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/tictactoe/img1.png'></img> </div></div>"
 
     foot.innerHTML = "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'></div>" +
-    "<div class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/tictactoe>" + githubIcon + "</a></div>" +
+    "<div style = 'text-align: left;' class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/tictactoe>" + githubIcon + "</a><br>  <i>Source Code</i></div>" +
     "<div style = 'padding-top: 20px; class = 'col-xs-3 col-md-3 col-lg-3'>" +
     "<a href = downloads/tictactoe.apk> <button style = 'float: left;' class = 'btn'> <i>Download For Android </i></button></a> </div></div>"
 }
@@ -61,7 +61,7 @@ function basechangerClick(){
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/BaseChanger/img1.png'></img> </div></div>"
 
     foot.innerHTML = "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'></div>" +
-    "<div class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/BaseChanger>" + githubIcon + "</a></div>" +
+    "<div style = 'text-align: left;' class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/BaseChanger>" + githubIcon + "</a><br>  <i>Source Code</i></div>" +
     "<div style = 'padding-top: 20px; class = 'col-xs-3 col-md-3 col-lg-3'>" +
     "<a href = downloads/com.test.Base_Changer.apk> <button style = 'float: left;' class = 'btn'> <i>Download For Android </i></button></a> </div></div>"
 
