@@ -7,7 +7,8 @@ function gradrClick(){
 
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
     "This is a program I worked on with two other students in a Software Engineering course. "+
-    "Its a crossplatform Desktop application written in Java using Swing for the frontend </div>" +
+    "The purpose of the program is a basic Grade book application for Professors" + 
+    "Its a crossplatform Desktop application written in Java using Swing for the frontend. </div>" +
     "<div class = 'row'> " +  "<div class = 'col-xs-12 col-md-6 col-lg-6'>" + 
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/Gradr/img1.png'></img> </div>" +
     "<div class = 'col-xs-12 col-md-6 col-lg-6'>" +
@@ -26,7 +27,7 @@ function sortingClick(){
     title.innerHTML = "Sorting"
     
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
-    "Application that compares the run time of sorting algorithms." +
+    "Application that compares the run time of sorting algorithms I wrote out by hand in C++." +
     "<div class = 'row'> " + 
     "<div class = 'col-xs-12 col-md-12 col-lg-12'> " +
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/sorting/img1.png'></img> </div></div>"
@@ -38,7 +39,8 @@ function tictactoeClick(){
     title.innerHTML = "Tic Tac Toe"
     
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
-    "Simple <i>Android</i> application I built as my first step into mobile programming."+
+    "Simple <i>Android</i> application that allows you to play Tic-Tac-Toe." +
+    " I built this application as my first step into mobile programming."+
     "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'> </div>" + 
     "<div class = 'col-xs-6 col-md-6 col-lg-6'> " +
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/tictactoe/img1.png'></img> </div></div>"
@@ -53,7 +55,7 @@ function basechangerClick(){
     
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
     "Simple <i>Xamarin.forms</i> application I built to use for my computer organization course"+
-    "it does simple base conversions. The unique part is it works with <i>Signed</i> digits.</div>" +
+    "it does simple base conversions. The unique part is it works with <i>Signed</i> digits." +
     "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'> </div>" + 
     "<div class = 'col-xs-6 col-md-6 col-lg-6'> " +
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/BaseChanger/img1.png'></img> </div></div>"
