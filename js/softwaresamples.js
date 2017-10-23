@@ -39,28 +39,28 @@ function tictactoeClick(){
     
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
     "Simple <i>Android</i> application I built as my first step into mobile programming."+
-    "<div class = 'row'> " +  "<div class = 'col-xs-4 col-md-4 col-lg-4'> </div>" + 
-    "<div class = 'col-xs-4 col-md-4 col-lg-4'> " +
+    "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'> </div>" + 
+    "<div class = 'col-xs-6 col-md-6 col-lg-6'> " +
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/tictactoe/img1.png'></img> </div></div>"
 
     foot.innerHTML = "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'></div>" +
     "<div class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/tictactoe>" + githubIcon + "</a></div>" +
     "<div style = 'padding-top: 20px; class = 'col-xs-3 col-md-3 col-lg-3'>" +
-    "<a href = downloads/tictactoe.apk> <button style = 'float: left;' class = 'btn'> Download </button></a> </div></div>"
+    "<a href = downloads/tictactoe.apk> <button style = 'float: left;' class = 'btn'> <i>Download For Android </i></button></a> </div></div>"
 }
 function basechangerClick(){
     title.innerHTML = "Base Changer"
     
     content.innerHTML = "<div style= 'padding-bottom: 10px;' class = 'textBlock' ><p> " +
     "Simple <i>Xamarin.forms</i> application I built to use for my computer organization course"+
-    "it does simple base conversions. The unique part is it works with negative numbers very well.</div>" +
-    "<div class = 'row'> " +  "<div class = 'col-xs-4 col-md-4 col-lg-4'> </div>" + 
-    "<div class = 'col-xs-4 col-md-4 col-lg-4'> " +
+    "it does simple base conversions. The unique part is it works with <i>Signed</i> digits.</div>" +
+    "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'> </div>" + 
+    "<div class = 'col-xs-6 col-md-6 col-lg-6'> " +
     "<img style= 'width:100%; height:auto;' src ='images/screenshots/BaseChanger/img1.png'></img> </div></div>"
 
     foot.innerHTML = "<div class = 'row'> " +  "<div class = 'col-xs-3 col-md-3 col-lg-3'></div>" +
     "<div class = 'col-xs-3 col-md-3 col-lg-3'> <a href = https://github.com/mariomerendino/BaseChanger>" + githubIcon + "</a></div>" +
     "<div style = 'padding-top: 20px; class = 'col-xs-3 col-md-3 col-lg-3'>" +
-    "<a href = downloads/com.test.Base_Changer.apk> <button style = 'float: left;' class = 'btn'> Download </button></a> </div></div>"
+    "<a href = downloads/com.test.Base_Changer.apk> <button style = 'float: left;' class = 'btn'> <i>Download For Android </i></button></a> </div></div>"
 
 }
